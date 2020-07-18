@@ -4,7 +4,12 @@ import { CalculatorApp } from './CalculatorApp';
 import { opReducer } from './operations/opReducer';
 
 const init = () => {
-  return { currentValue: '0' };
+  return {
+    partialResult: 0,
+    lastValue: 0,
+    currentValue: 0,
+    lastOp: '',
+  };
 };
 
 export const App = () => {
