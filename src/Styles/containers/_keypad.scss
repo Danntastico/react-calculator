@@ -1,0 +1,6 @@
+.keypad__row {
+  display: flex;
+  &:last-child {
+    justify-content: flex-end;
+  }
+}
