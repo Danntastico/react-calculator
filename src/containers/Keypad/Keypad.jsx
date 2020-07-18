@@ -1,39 +1,39 @@
-import React, { useContext } from 'react';
-import { Key } from '../../components/Key/Key';
+import React from 'react';
+import { KeyFunc } from '../../components/Key/KeyFunc';
 import { types } from '../../types/types';
-import { OpContext } from '../../operations/OpContext';
+import { KeyNum } from '../../components/Key/KeyNum';
 
 export const Keypad = () => {
   return (
     <div className='keypad__container'>
       <div className='keypad__row'>
-        <Key value='C' type={types.keyFun} />
-        <Key value='+/-' type={types.keyFun} />
-        <Key value='%' type={types.keyFun} />
-        <Key value='/' type={types.keyFun} />
+        <KeyFunc value='C' type={types.keyFun} />
+        <KeyFunc value='del' type={types.keyFun} />
+        <KeyFunc value='%' type={types.keyFun} />
+        <KeyFunc value='/' type={types.keyFun} />
       </div>
       <div className='keypad__row'>
-        <Key value='7' type={types.keyNum} />
-        <Key value='8' type={types.keyNum} />
-        <Key value='9' type={types.keyNum} />
-        <Key value='X' type={types.keyFun} />
+        <KeyNum value={7} />
+        <KeyNum value={8} />
+        <KeyNum value={9} />
+        <KeyFunc value='X' type={types.keyFun} />
       </div>
       <div className='keypad__row'>
-        <Key value='4' type={types.keyNum} />
-        <Key value='5' type={types.keyNum} />
-        <Key value='6' type={types.keyNum} />
-        <Key value='-' type={types.keyFun} />
+        <KeyNum value={4} />
+        <KeyNum value={5} />
+        <KeyNum value={6} />
+        <KeyFunc value='-' type={types.keyFun} />
       </div>
       <div className='keypad__row'>
-        <Key value='1' type={types.keyNum} />
-        <Key value='2' type={types.keyNum} />
-        <Key value='3' type={types.keyNum} />
-        <Key value='+' type={types.keyFun} />
+        <KeyNum value={1} />
+        <KeyNum value={2} />
+        <KeyNum value={3} />
+        <KeyFunc value='+' type={types.keyFun} />
       </div>
       <div className='keypad__row'>
-        <Key value='0' type={types.keyNum} />
-        <Key value='.' type={types.keyNum} />
-        <Key value='=' type={types.keyFun} />
+        <KeyNum value={0} />
+        <KeyFunc value='.' />
+        <KeyFunc value='=' type={types.keyFun} />
       </div>
     </div>
   );
