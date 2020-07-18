@@ -1,0 +1,27 @@
+.keypad__key {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  border-radius: 43px;
+  background: #dfd3c3;
+  box-shadow: 3px 3px 5px #91897f, -3px -3px 5px #ffffff;
+  transition: 0.3s;
+  border-style: none;
+  border: none;
+  text-align: center;
+  outline: none;
+
+  &:active {
+    background: #dfd3c3;
+    box-shadow: -2px -2px 11px #91897f, 2px 2px 11px #ffffff;
+  }
+}
+.keyFun {
+  color: $text-color2;
+  font-size: 0.9em;
+}
+
+.keyNum {
+  color: $text-color;
+  font-weight: bold;
+}

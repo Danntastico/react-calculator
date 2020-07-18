@@ -1,0 +1,18 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: $bg-color;
+}
+
+.container {
+  position: absolute;
+  padding: 20px;
+  border-radius: 50px;
+  background: #dfd3c3;
+  box-shadow: 5px 5px 20px #b5ab9e, -5px -5px 20px #fffbe8;
+}
