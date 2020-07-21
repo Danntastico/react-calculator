@@ -5,10 +5,10 @@ import { opReducer } from './operations/opReducer';
 
 const init = () => {
   return {
-    partialResult: 0,
-    lastValue: 0,
-    currentValue: 0,
-    lastOp: '',
+    display: 0,
+    firstNum: null,
+    operator: '',
+    isFirstNumReady: false,
   };
 };
 
