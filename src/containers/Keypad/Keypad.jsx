@@ -32,7 +32,7 @@ export const Keypad = () => {
       </div>
       <div className='keypad__row'>
         <KeyNum value={0} />
-        <KeyFunc value='.' />
+        {/* <KeyFunc value='.' /> */}
         <KeyFunc value='=' />
       </div>
     </div>
