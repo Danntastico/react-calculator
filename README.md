@@ -1,6 +1,5 @@
-# Calculator App
-
-## General Info
+# Calculator App
+## General Info
 
 Hi!
 This is a simple Calculator application made by applying some concepts of React: Function Components, useContext, useReducer.
